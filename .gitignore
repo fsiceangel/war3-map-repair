@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.w3x
+*.w3m
+*.bak
+*.dll
+*.mpq
+*.blp
+*.mdx
+*.report.json

@@ -1,0 +1,22 @@
+{
+  "human": {
+    "UnitUI.slk_models": 588,
+    "ItemData.slk_models": 44,
+    "ability_added_columns": 40,
+    "byte_identical_original_blocks": 67,
+    "source_sha256": "0f6c0294b93a755e5f31bf7315bab92327c52f6076b2c436e561367984fdd7d5",
+    "fixed_sha256": "22de6c4572d7cdb197c97f166b3d103372d24ccc2dbcade56e46dfd37c37eab5",
+    "cli_regression_matches_historical_output": true,
+    "runtime": "User reported no more crashes after combined repair; no per-map complete playthrough recorded."
+  },
+  "rpg": {
+    "UnitUI.slk_models": 578,
+    "ItemData.slk_models": 482,
+    "ability_added_columns": 40,
+    "byte_identical_original_blocks": 863,
+    "source_sha256": "da384ab2bf719cdf8c6f226f4300a51cefbe3f48d1c1d7fefe1e585de526eece",
+    "fixed_sha256": "6f494e45801126afed771da6a9d79889c4626f45b82babd08a201e8bfddbfb0e",
+    "cli_regression_matches_historical_output": true,
+    "runtime": "User reported no more crashes after combined repair; no per-map complete playthrough recorded."
+  }
+}
