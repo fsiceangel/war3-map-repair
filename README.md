@@ -69,7 +69,7 @@ Extracted from repairs of 《人族无敌 II 2.3a》 (*Renzu Wudi II 2.3a*) and 
 
 ### Context: the Reforged 3.0 update
 
-This project began with reports of legacy custom maps failing after the **3.0 update** released alongside the new **Forsaken Kingdom DLC** for Warcraft III: Reforged. Blizzard's [official overview](https://news.blizzard.com/en-us/article/24302500) documents the DLC, patch 3.0, and new graphics mode.
+This project began with reports of legacy custom maps failing after the **3.0 update** released alongside the new **Forsaken Kingdom DLC** for Warcraft III: Reforged. Blizzard's [official overview](https://news.blizzard.com/en-us/article/24298590/warcraft-iii-reforged-forsaken-kingdom-deep-dive-recap) documents the DLC, patch 3.0, and new graphics mode.
 
 The user reported these two maps failing after that update. The exact client build was not recorded, and a version-by-version comparison has not isolated the specific change that introduced the failures. The focus is therefore **legacy-map compatibility after Reforged 3.0**, without claiming that every old map is affected or that purchasing the DLC itself causes the problem.
 
