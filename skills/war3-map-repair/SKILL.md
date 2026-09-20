@@ -7,7 +7,7 @@ description: Diagnose Warcraft III custom maps that fail after a client update, 
 
 Use the user's original map or identified working backup. Distinguish a compatibility repair from gameplay changes; do not change loot, triggers, or balance as an incidental repair.
 
-Read [the case study](references/case-study.md) before selecting a repair. This is evidence from two maps, not a universal Warcraft RPG fix. The reported client label “3.0” is user terminology; record the actual executable build separately when available.
+Read [the case study](references/case-study.md) before selecting a repair. This is evidence from two maps, not a universal Warcraft RPG fix. The cases were reported after Warcraft III: Reforged patch 3.0, released alongside Forsaken Kingdom. Record the actual executable build separately when available; the exact affected build and causal engine change were not isolated.
 
 ## Workflow
 

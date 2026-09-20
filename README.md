@@ -4,13 +4,20 @@
 
 ## 中文
 
-魔兽争霸 III 旧自定义地图兼容性诊断 skill 与最小修复工具，采用 [MIT 许可证](LICENSE)。
+面向《魔兽争霸 III：重制版》（Warcraft III: Reforged）旧自定义地图的兼容性诊断 skill 与最小修复工具，采用 [MIT 许可证](LICENSE)。
 
 从《人族无敌 II 2.3a》《逆天问道 3.1》的实际修复中提取：旧版内嵌 SLK 的模型字段迁移、可选的能力等级列回退、原图保护与 MPQ 校验。**不是所有 RPG 的一键修复器，也未证明是统一的 API 故障。**
 
 - [完整修复说明、证据与未解决问题（中文）](skills/war3-map-repair/references/case-study.md)
 - [Skill 入口（英文）](skills/war3-map-repair/SKILL.md)
 - [离线回归记录](skills/war3-map-repair/references/regression.json)
+
+
+### 问题背景：重制版 3.0 更新
+
+本项目源于重制版随新 DLC **Forsaken Kingdom** 推出的 **3.0 更新**之后，旧自定义地图无法正常运行的实际反馈。暴雪的[官方介绍](https://news.blizzard.com/zh-tw/article/24302500/iii)确认了 DLC、3.0 更新与新增画面模式的发布背景。
+
+这两张地图的故障是在该次更新后由用户报告的；尚未记录当时客户端的精确 build，也未通过逐版本对照定位引入故障的具体改动。因此，本项目聚焦 **Reforged 3.0 更新后的旧地图兼容问题**，并不声称所有旧地图都受影响，或购买 DLC 本身会导致故障。
 
 ### 安装 skill
 
@@ -51,13 +58,20 @@ python -m unittest discover -s tests -v
 
 ## English
 
-A skill and minimal repair toolkit for diagnosing compatibility issues in legacy Warcraft III custom maps. Released under the [MIT License](LICENSE).
+A skill and minimal repair toolkit for diagnosing legacy custom-map compatibility issues in **Warcraft III: Reforged**. Released under the [MIT License](LICENSE).
 
 Extracted from repairs of 《人族无敌 II 2.3a》 (*Renzu Wudi II 2.3a*) and 《逆天问道 3.1》 (*Nitian Wendao 3.1*): migration of model fields in embedded legacy SLK tables, optional ability-level column fallback, source-map preservation, and MPQ integrity checks. **This is not a universal one-click RPG repair tool, and the evidence does not establish a shared API failure.**
 
 - [Repair case study, evidence, and unresolved issues (Chinese)](skills/war3-map-repair/references/case-study.md)
 - [Skill entry point (English)](skills/war3-map-repair/SKILL.md)
 - [Offline regression records](skills/war3-map-repair/references/regression.json)
+
+
+### Context: the Reforged 3.0 update
+
+This project began with reports of legacy custom maps failing after the **3.0 update** released alongside the new **Forsaken Kingdom DLC** for Warcraft III: Reforged. Blizzard's [official overview](https://news.blizzard.com/en-us/article/24302500) documents the DLC, patch 3.0, and new graphics mode.
+
+The user reported these two maps failing after that update. The exact client build was not recorded, and a version-by-version comparison has not isolated the specific change that introduced the failures. The focus is therefore **legacy-map compatibility after Reforged 3.0**, without claiming that every old map is affected or that purchasing the DLC itself causes the problem.
 
 ### Install the skill
 
