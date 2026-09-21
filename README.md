@@ -48,6 +48,21 @@ python skills/war3-map-repair/scripts/repair_map.py "map.w3x" --output "map.comp
 
 仓库不包含地图、解包资源、第三方二进制、账号信息或个人路径，也不包含掉率改动。
 
+### JASS 诊断与修复工具
+
+新增独立工具 `repair_jass.py`，用于排查“地图不可用或已损毁”背后的旧 JASS 返回类型问题和函数重名。**SLK 修复不会修复 JASS；静态资源校验通过，也不代表脚本能编译。**
+
+```powershell
+# 默认只读诊断
+python skills/war3-map-repair/scripts/repair_jass.py "map.w3x"
+# 当前只支持混乱武林 A4.6 的已验证脚本；严格校验脚本哈希
+python skills/war3-map-repair/scripts/repair_jass.py "map.compat.w3x" --profile hlwl-a4.6 --output "map.jass.w3x"
+```
+
+该 profile 同步迁移对象存储、读取和清理，保留普通整数缓存与游戏逻辑。新工具逐字节复现了用户确认可运行的 C 版，离线编译从 7 个错误降为 0 个；尚未完整通关测试。未知脚本或已经修好的脚本会被拒绝，不会强行套用。
+
+详细流程及可选编译检查见 [JASS 迁移说明（英文）](skills/war3-map-repair/references/jass-migration.md)。编译器和标准库不随仓库分发。
+
 ### 测试与问题反馈
 
 ```powershell
@@ -101,6 +116,21 @@ The tool preserves the input and creates a separate candidate map and JSON repor
 The user reported that the historical combined patch stopped the crashes; **the minimap issue remains unresolved**. Offline regression on the two original maps reproduced the previous repair outputs. This does not constitute in-game testing on every client version. Because the historical repair applied multiple changes together, it also does not identify any single change as the sole crash fix.
 
 The repository contains no maps, extracted game assets, third-party binaries, account information, personal paths, or drop-rate modifications.
+
+### JASS diagnosis and repair tool
+
+The separate `repair_jass.py` tool diagnoses legacy return-type patterns and function-name collisions behind an “unavailable or corrupted map” error. **SLK repair does not repair JASS, and passing archive checks does not establish that a script compiles.**
+
+```powershell
+# Read-only diagnosis by default
+python skills/war3-map-repair/scripts/repair_jass.py "map.w3x"
+# Currently supports only the verified HLWL A4.6 script, gated by its exact hash
+python skills/war3-map-repair/scripts/repair_jass.py "map.compat.w3x" --profile hlwl-a4.6 --output "map.jass.w3x"
+```
+
+This profile migrates typed object stores, loads, and cleanup together while preserving ordinary integer caching and gameplay logic. The tool reproduces the user-confirmed working C map byte-for-byte; offline compilation drops from 7 errors to 0. A full playthrough remains unverified. Unknown or already-repaired scripts are rejected rather than forcibly rewritten.
+
+See [JASS migration notes](skills/war3-map-repair/references/jass-migration.md) for the workflow and optional compiler checks. Compiler binaries and standard libraries are not bundled.
 
 ### Tests and issue reports
 

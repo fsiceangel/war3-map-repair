@@ -1,0 +1,18 @@
+{
+  "profile": "hlwl-a4.6",
+  "source_script_sha256": "18e56ecaad125d06bf86778307aaf071320184e2add4bf06a074d0c13694b2b4",
+  "output_script_sha256": "b76bb9571969b0cb4bc424e877e2b488a6e3720b6be938135cbf1a1f67c4ac68",
+  "output_map_sha256": "6429e211b469f53a8a418e674fb31834b0e708c15594a25ed19fb15d73a6310e",
+  "typed_stores": 47,
+  "mission_flushes": 31,
+  "unchanged_blocks": 74,
+  "compiler": {
+    "exit_code": 0,
+    "tool_sha256": "e6384d68fbaf4950d68e174945377dbd8b3b7c310c59122651d5a95ec0fb37d6",
+    "common_sha256": "8357c64cb94b7a6fc2fb7b7e7846eb6e2e884828f6b4df4d685bcc5c2a7a5e05",
+    "blizzard_sha256": "2940674ddd5d9dbaf84df2490b609d3d606c66db6c70fbf11a7940d4209ddfed"
+  },
+  "original_compiler_errors": 7,
+  "user_feedback": "C candidate runs; not a complete playthrough or exhaustive ability test",
+  "unknown_map_refusal_test": "passed: campus script rejected; no output created"
+}

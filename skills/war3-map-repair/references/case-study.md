@@ -45,3 +45,7 @@ MPQ 写入使用 [StormLib 官方项目](https://github.com/ladislav-zezula/Stor
 ## 更新背景来源
 
 暴雪[官方介绍](https://news.blizzard.com/zh-tw/article/24302500/iii)确认 Forsaken Kingdom、3.0 更新与新增画面模式的发布背景；这能核对版本背景，但不能替代本案例的精确客户端 build 记录或证明具体的崩溃根因。
+
+## 后续案例：相同 SLK 特征不代表相同故障
+
+混乱武林 A4.6 原图与 SLK-only B 版均被客户端拒绝。日志确认 JASS 的五处返回类型错误与两处函数重名，迁移后 C 版得到用户能运行的反馈。该修复现作为独立、严格匹配脚本哈希的工具提供，见 [JASS 迁移说明](jass-migration.md)。校园修神录 5.6 则通过原 SLK 工具处理，用户随后要求保留修复版。神道 II 1.11 没有上述旧 SLK，工具无适用改动；不能把它计入修复成功案例。
